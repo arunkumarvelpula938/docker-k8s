@@ -1,0 +1,20 @@
+apiversion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-java-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLables:
+      app: hello-java
+  template:
+    metadata:
+      labels:
+        app: hello-java
+    spec:
+      containers:
+        - name: hello-java-container
+          image: sharonevorem02/hello-java-app:latest
+          args: ["sharone"]
+        
+
