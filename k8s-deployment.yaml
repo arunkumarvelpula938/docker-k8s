@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: hello-java-container
-          image: sharonevorem02/hello-java-app:latest
-          args: ["sharone"]
+          image: arunkumarvelpula938/hello-java-app:latest
+          args: ["Arun"]
         
 
